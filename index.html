@@ -15,7 +15,7 @@
 	<div class="container" id="top">
 
 		<header>
-			<div class="header-inner">
+			<div class="header-inner contain">
 				<h1 class="logo-head centered">Bone &amp; Porter</h1>
 				<h2 class="subhead centered">Unicycles and mustaches. Bitcoin only.</h2>
 	 			<div class="arrow">
@@ -31,7 +31,18 @@
  		</nav>
 
  		<section class="main">
-			<section class="intro contain" id="intro-ss">
+
+	 		<div class="scroll-circles">
+	 			<div class="scroll-circles-fixed">
+					<a href="#">○</a>
+					<a href="#">○</a>
+					<a href="#">○</a>
+					<a href="#">○</a>
+				</div>
+			</div>
+
+
+			<section class="intro contain">
 				<div class="row clearfix">
 					<div class="column half">
 						<picture>
@@ -43,8 +54,9 @@
 						</picture>
 					</div>
 
-					<div class="column half">
+					<div class="column half" id="intro-ss">
 						<h1 class="section-head">Your Mustache. Our Products.</h1>
+						<div class="line">–</div>
 						<p class="primary-graph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto tempore, veritatis ducimus adipisci itaque deserunt suscipit, labore accusamus quam cumque impedit. Sapiente dolores debitis cupiditate nobis, dolorum architecto, nesciunt fugit.</p>
 					</div>
 				</div><!--row-->
@@ -52,9 +64,8 @@
 
 			<section class="product contain" id="product-ss">
 				<div class="row clearfix">
-
 					<div class="column half flow-opposite">
-						<picture class="pic-padding">
+						<picture>
 						<!--[if IE 9]><video style="display: none;"><![endif]-->
 						<source srcset="img/product-lrg.png" media="(min-width: 1000px)">
 						<source srcset="img/product-med.png" media="(min-width: 800px)">
@@ -65,6 +76,7 @@
 
 					<div class="column half">
 						<h1 class="section-head">Refined ingredients.</h1>
+						<div class="line">–</div>
 						<p class="primary-graph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto tempore, veritatis ducimus adipisci itaque deserunt suscipit, labore accusamus quam cumque impedit. Sapiente dolores debitis cupiditate nobis, dolorum architecto, nesciunt fugit.</p>
 						<ul class="ingredients-list">
 							<li>
@@ -74,7 +86,7 @@
 
 							<li>
 								<p><span class="number-size">9</span></p>
-								<p>Episodes of 'Portlandia' watched</p>
+								<p>Episodes of <em>Portlandia</em> watched</p>
 							</li>
 
 							<li>
@@ -83,12 +95,39 @@
 							</li>
 						</ul>
 					</div>
-
-
-				
-
 				</div><!--row-->
-			</section><!--intro-->
+			</section><!--product-->
+
+			<section class="products">
+				<div class="row clearfix">
+					 
+					
+					<!--<picture>
+						 
+						<source srcset="img/balm-lrg.png" media="(min-width: 1000px)">
+						<source srcset="img/balm-med.png" media="(min-width: 800px)">
+					 
+						<img srcset="img/balm.png" alt="A douchey product">
+					</picture>
+					<div class="products-headers">
+						<h1 class="products-head">Wax No. 1</h1>
+						<h2 class="products-subhead">Availability: In-Stock
+							<br>
+							Price: 12.99
+						</h2>
+					</div>
+				</div>
+
+				 
+					<div class="button-div">
+						<a class="btn" href="#">Buy Now</a>
+					</div>-->
+					 
+
+						
+				 
+				</div><!--row-->
+			</section><!--products-->
 
 		</section><!--main-->
 	</div><!--container-->

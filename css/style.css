@@ -98,6 +98,10 @@ NORMALIZE.css
 		padding: 3.2em 0;
 	}
 
+	.column {
+		padding: 1.6em 0;
+	}
+
 	.container {
 		margin: 0 auto;
 	}
@@ -122,8 +126,8 @@ NORMALIZE.css
 	}
 
 	.header-inner {
-			position: relative;
-		top: 50%;
+		position: relative;
+		top: 30%;
 		-webkit-transform:translateY(-50%);
 		-moz-transform:translateY(-50%);
 		-ms-transform:translateY(-50%);
@@ -198,8 +202,28 @@ NORMALIZE.css
 		font-size: 2em;
 	}
 
+	.product {
+		text-align: left;
+	}
 
+	.products {
+		
+	}
 
+	.products-list {
+		text-align: center;
+		padding: 3.2em 0;
+	}
+
+	.products-list li {
+		margin: 0 0 6em 0;
+		-webkit-transition: .3s all;
+	}
+
+	.products-headers {
+		padding: 1.6em 0;
+		margin: 0 auto;
+	}
 
 	/* Intro */
 
@@ -208,6 +232,8 @@ NORMALIZE.css
 		padding: 6em 0 0 0;
 		
 	}
+
+
 
 	/* Transitions */
 
@@ -230,18 +256,30 @@ NORMALIZE.css
  	/* Text Styles */
 
  	.section-head {
- 		font-size: 1.2em;
- 		text-transform: uppercase;
- 		font-weight: 700;
- 		padding: 1.6em 0;
+ 		font-size: 2.2em;
+  		font-weight: 300;
+ 		padding: .8em 0;
  		text-align: center;
- 	}
+  	}
+
+  	.products-head {
+  		text-transform: uppercase;
+  		font-size: 1.4em;
+  		padding-bottom: .8em;
+  	}
+
+  	.products-subhead {
+  		font-size: 1.2em;
+  		border-top: 2px solid #222;
+  		border-bottom: 2px solid #222;
+  		padding: .8em 0;
+  	}
 
  	.logo-head {
 		letter-spacing: -1px;
 		font-family: "lust-script";	
-		text-shadow: -1px -1px 1px #555,
-               -2px -2px 1px #666;	
+		/*text-shadow: -1px -1px 1px #555,
+               -2px -2px 1px #666;*/	
 	}
 
 	.subhead {
@@ -257,6 +295,12 @@ NORMALIZE.css
  		font-weight: 200;
  		line-height: 1.5;
  		text-align: center;
+ 	}
+
+ 	.primary-graph-small {
+ 		font-size: .8em;
+ 		font-weight: 600;
+ 		text-align: left;
  	}
 
  	.number-size {
@@ -291,6 +335,43 @@ NORMALIZE.css
  		width: 10%;
  		margin: auto;
  	}
+
+ 	.button-div {
+ 		margin-top: 3em;
+ 	}
+
+ 	.btn {
+ 		border: 3px solid #222;
+ 		border-radius: 3px;
+		width: 60%;
+		margin: 3em auto;
+		color: #222;
+ 		font-weight: 800;
+ 		text-transform: uppercase;
+ 		font-size: 14px;
+ 		letter-spacing: .1em;
+ 		padding: 1em 2em;
+		-webkit-transition:.1s ease all;
+		-moz-transition:.1s ease all;
+		-ms-transition:.1s ease all;
+		-o-transition:.1s ease all;
+		transition:.1s ease all;
+ 	}
+
+ 	.btn a:hover, .btn:hover {
+		color: #fff;
+		background: #222;
+ 	}
+
+	.line {
+		text-align: center;
+		font-size: 40px;
+		margin-top: -1em;
+	}
+
+	.no-contain {
+		max-width: none;
+	}
 
 
 
@@ -335,6 +416,14 @@ NORMALIZE.css
 	.column.flow-opposite { 
 	float: right; 
 	}
+	
+
+
+	/* Header */
+
+	.header-inner {
+		top: 50%;
+	}
 
 
 
@@ -343,6 +432,23 @@ NORMALIZE.css
 	.main-nav a {
 		font-size: 1.1em;
 	}
+
+	.scroll-circles {
+		position: absolute;
+	}
+
+	.scroll-circles a {
+		display: block;
+		font-size: 30px;
+		color: rgba(0,0,0,.6);
+	}
+
+	.scroll-circles-fixed {
+		position: fixed;
+		right: 4%;
+		top:50%;
+	}
+
 
 
 	/* Main Styles */
@@ -356,13 +462,38 @@ NORMALIZE.css
 		font-size: .6em;
 	}
 
+	.products-list {
+		text-align: center;
+		padding: 3.2em 0;
+	}
+
+	.products-list li {
+		display: inline-block;
+		
+		-webkit-transition: .3s all;
+	}
+
+
 
 	/* Misc */
 
 	.contain {
  		max-width: 1500px;
  		margin: 0 auto;
+ 	}
+
+ 	.line {
+ 		display: none;
  	} 
+
+ 	.btn {
+ 		position: absolute;
+ 		bottom: 6%;
+ 		left: 17.5%;
+ 		width: 10%;
+ 	}
+
+
 
  	/* Text Styles */
 	
@@ -370,7 +501,17 @@ NORMALIZE.css
 		font-size: 5em;
  	}
 
+ 	.section-head {
+ 		text-align: left;
+ 	}
+
+ 	.primary-graph {
+		text-align: left;
+	}
+
+
 }
+
 
 /* Larger screen breakpoint (1000px) */
 @media (min-width: 62.5rem) {	
@@ -378,7 +519,7 @@ NORMALIZE.css
 	/* Text Styles */
 
 	.section-head {
-		font-size: 2em; 
+		font-size: 4em; 
 		text-align: left;
 	}
 
@@ -389,20 +530,16 @@ NORMALIZE.css
 	.primary-graph {
   		font-size: 1.2em;
   		line-height: 1.4;
-  		text-align: left;
- 	}
+  	}
 
  	.ingredients-list li {
 		font-size: .9em;
 	}
 
-
-
-
 }
 
 
-/* Larger screen breakpoint (1300px) */
+/* Largerer screen breakpoint (1300px) */
 @media (min-width: 81.5rem) {	
 	.ingredients-list li {
 		font-size: 1.5em;
