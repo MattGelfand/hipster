@@ -55,7 +55,7 @@ NORMALIZE.css
 
 	img {
 	margin: 0;
-	padding: 0 0 1.6em 0;
+	padding: 0;
 	height: auto;
 	max-width: 100%;
 	}
@@ -91,11 +91,10 @@ NORMALIZE.css
 	}
 
 	body {
- 		padding-top: 600px;
+ 		padding-top: 800px;
 	}
 
 	.row {
-		min-height: 100vh;
 		padding: 3.2em 0;
 	}
 
@@ -108,7 +107,7 @@ NORMALIZE.css
 
 	header {
 		color: #fff;
-		height: 600px; 
+		height: 800px; 
 		-webkit-animation: hipster 2s ease-in;
 		-moz-animation: hipster 2s ease-in;
 		-ms-animation: hipster 2s ease-in;
@@ -120,6 +119,17 @@ NORMALIZE.css
 		-ms-transition:.3s;
 		-o-transition:.3s;
 		transition:.3s;
+	}
+
+	.header-inner {
+			position: relative;
+		top: 50%;
+		-webkit-transform:translateY(-50%);
+		-moz-transform:translateY(-50%);
+		-ms-transform:translateY(-50%);
+		-o-transform:translateY(-50%);
+		transform:translateY(-50%);
+
 	}
 
 	.logo-container {
@@ -177,20 +187,15 @@ NORMALIZE.css
 		background: #fff;
 	}
 
-	.ingredients-list li {
-		font-size: 2em;
-		margin: 2em 0;
-	}
-
 	.ingredients-list {
 		font-family: 'Raleway', sans-serif;
 		text-align: center;
 	}
 
 	.ingredients-list li {
-		font-size: 3em;
 		border-bottom: 1px dotted rgba(0,0,0,.5);
 		padding: 1em 0;
+		font-size: 2em;
 	}
 
 
@@ -200,7 +205,7 @@ NORMALIZE.css
 
 	.intro {
 		background: #fff;
-		padding: 3.2em 0;
+		padding: 6em 0 0 0;
 		
 	}
 
@@ -233,10 +238,10 @@ NORMALIZE.css
  	}
 
  	.logo-head {
-		font-family: 'Advent Pro', sans-serif;
- 		font-size: 6em;
-		font-weight: 200;
-		text-transform: uppercase;
+		letter-spacing: -1px;
+		font-family: "lust-script";	
+		text-shadow: -1px -1px 1px #555,
+               -2px -2px 1px #666;	
 	}
 
 	.subhead {
@@ -294,11 +299,8 @@ NORMALIZE.css
 
 
 
-/* Medium screen breakpoint (640px) */
-@media (min-width: 40rem) {
-  	html {
-
-  	}
+/* Medium screen breakpoint (800px) */
+@media (min-width: 50rem) {
 
   	.row {
   	padding: .8em 0;
@@ -351,13 +353,14 @@ NORMALIZE.css
 	}
 
 	.ingredients-list li {
-		font-size: 1.5em;
+		font-size: .6em;
 	}
+
 
 	/* Misc */
 
 	.contain {
- 		max-width: 1200px;
+ 		max-width: 1500px;
  		margin: 0 auto;
  	} 
 
@@ -369,8 +372,8 @@ NORMALIZE.css
 
 }
 
-/* Larger screen breakpoint (815px) */
-@media (min-width: 50rem) {	
+/* Larger screen breakpoint (1000px) */
+@media (min-width: 62.5rem) {	
 	
 	/* Text Styles */
 
@@ -389,13 +392,21 @@ NORMALIZE.css
   		text-align: left;
  	}
 
+ 	.ingredients-list li {
+		font-size: .9em;
+	}
+
+
+
 
 }
 
 
-/* Larger screen breakpoint (960px) */
-@media (min-width: 70rem) {	
-
+/* Larger screen breakpoint (1300px) */
+@media (min-width: 81.5rem) {	
+	.ingredients-list li {
+		font-size: 1.5em;
+	}
 }
 
 

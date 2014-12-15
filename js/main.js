@@ -1,4 +1,4 @@
-$(".logo-head").fitText(1.2, { minFontSize: '40px', maxFontSize: '100px' })
+$(".logo-head").fitText(1.2, { minFontSize: '40px', maxFontSize: '110px' })
 
 
 // Picture element HTML5 shiv
