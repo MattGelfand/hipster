@@ -37,3 +37,22 @@ $(window).scroll(function() {
     mn.removeClass(mns);
   }
 });
+
+
+
+
+// Up Arrow
+
+var ua = $(".arrowfixed");
+
+$(window).scroll(function() {
+  if( $(this).scrollTop() > 900 ) {
+    ua.addClass('show');
+  } else {
+    ua.removeClass('show');
+  }
+});
+
+
+$('.number-size').addClass('animated bounce');
+

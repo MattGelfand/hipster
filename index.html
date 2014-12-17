@@ -13,7 +13,7 @@
 </head>
 <body>
 	<div class="container" id="top">
-
+	<a href="#intro-ss" class="arrowfixed"><img src="img/arrow-up-fixed.png" alt="" /></a>
 		<header>
 			<div class="header-inner contain">
 				<h1 class="logo-head centered">Bone &amp; Porter</h1>
@@ -25,32 +25,20 @@
 		</header>
 
 		<nav class="main-nav" role="navigation">
-			<a href="#">About</a>
-			<a href="#">Products</a>
-			<a href="#">Contact</a>
- 		</nav>
+			<a href="#intro-ss">Home</a>
+			<a href="#ingredients-ss">Ingredients</a>
+			<a href="#products-ss">Products</a>
+			<a href="#contact-ss">Contact</a>
+  		</nav>
 
  		<section class="main">
-
-	 		<div class="scroll-circles">
-	 			<div class="scroll-circles-fixed">
-					<a href="#">○</a>
-					<a href="#">○</a>
-					<a href="#">○</a>
-					<a href="#">○</a>
-				</div>
-			</div>
-
-
-			<section class="intro contain" id="intro-ss">
+			<section class="intro contain">
 				<div class="row clearfix">
-					<div class="column half">
+					<div class="column half" id="intro-ss">
 						<picture>
-						<!--[if IE 9]><video style="display: none;"><![endif]-->
-						<source srcset="img/mustache-guy-lrg.png" media="(min-width: 1000px)">
-						<source srcset="img/mustache-guy-med.png" media="(min-width: 800px)">
-						<!--[if IE 9]></video><![endif]-->
-						<img srcset="img/mustache-guy-med.png" alt="A douche with a mustache">
+	 						<source srcset="img/mustache-guy-lrg.png" media="(min-width: 1000px)">
+							<source srcset="img/mustache-guy-med.png" media="(min-width: 800px)">
+	 						<img srcset="img/mustache-guy-med.png" alt="A douche with a mustache">
 						</picture>
 					</div>
 
@@ -62,15 +50,13 @@
 				</div><!--row-->
 			</section><!--intro-->
 
-			<section class="ingredients contain" id="product-ss">
+			<section class="ingredients contain" id="ingredients-ss">
 				<div class="row clearfix">
 					<div class="column half flow-opposite">
 						<picture>
-						<!--[if IE 9]><video style="display: none;"><![endif]-->
-						<source srcset="img/product-lrg.png" media="(min-width: 1000px)">
-						<source srcset="img/product-med.png" media="(min-width: 800px)">
-						<!--[if IE 9]></video><![endif]-->
-						<img srcset="img/product.png" alt="A douchey product">
+	 						<source srcset="img/product-lrg.png" media="(min-width: 1000px)">
+							<source srcset="img/product-med.png" media="(min-width: 800px)">
+	 						<img srcset="img/product.png" alt="A douchey product">
 						</picture>
 					</div>
 
@@ -100,39 +86,178 @@
 
 			<section class="segue"></section>
 
-			<section class="products">
+			<section class="products contain" id="products-ss">
 				<div class="row clearfix">
-					<div class="hgroup contain">
-						<h1 class="section-head-alt centered">Our Products</h1>
-						<h2 class="subhead centered subhead-alt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+					<div class="hgroup">
+						<h1 class="section-head centered">Our Products</h1>
+						<div class="line">–</div>
+						<h2 class="primary-graph centered">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
 					</div>
 
-					<div class="column third">
-						<article class="product-holder">
-							<img src="img/overlaytest.jpg" alt="" class="product-img" />
-							<div class="product-overlay">
-								<span class="product-overlay-head">Details</span>
-							</div>
-						</article>
-					</div>
-
-					<!-- SLIDE UP HEADER 
-					<div class="column third">
-						<article class="product-list">
-							<img class="product-list-img" src="img/balm.png" alt="#" />
-							<div class="product-list-overlay">
-								<h1 class="product-list-header">Item 1</h1>
-								<h2 class="product-list-subhead">A product description goes here</h2>
-								<div class="button-div">
-									<a class="btn" href="#">Add to cart</a>
+					
+					<ul class="photo-grid">
+						<div class="column third">
+							<li>
+								<a href="http://www.flickr.com/photos/anirudhkoul/3536413126/">
+									<figure>
+										<img src="img/overlaytest.png" class="animated bounce" alt="Arc de Triomphe">
+										<figcaption><p class="product-info-head">Details</p></figcaption>
+									</figure>
+								</a>
+							</li>
+							
+							<div class="product-info">
+								<h1 class="product-info-head no-brdr">soap</h1>
+								<p class="product-info-subhead dim">this is a type of soap</p>
+								<div class="btn-div">
+									<a href="#" class="btn">Add to cart</a>
 								</div>
-								<h3>$13.50</h3>
+								<p><strong>$31.95</strong></p>
 							</div>
-						</article>
-					</div>-->
+						</div>
+						<div class="column third">
+							<li>
+								<a href="http://www.flickr.com/photos/aigle_dore/5237960181/">
+									<figure>
+										<img src="img/overlaytest.png" alt="Eiffel Tower">
+										<figcaption><p class="product-info-head">Details</p></figcaption>
+									</figure>
+								</a>
+							</li>
 
-				</div><!--row-->		 												
+							<div class="product-info">
+								<h1 class="product-info-head no-brdr">soap</h1>
+								<p class="product-info-subhead dim">this is a type of soap</p>
+								<div class="btn-div">
+									<a href="#" class="btn">Add to cart</a>
+								</div>
+								<p><strong>$31.95</strong></p>
+							</div>
+						</div>
+						<div class="column third">
+							<li>
+								<a href="http://www.flickr.com/photos/aigle_dore/5238557764/">
+									<figure>
+										<img src="img/overlaytest.png" alt="Notre Dame">
+										<figcaption><p class="product-info-head">Details</p></figcaption>
+									</figure>
+								</a>
+							</li>
+							<div class="product-info">
+								<h1 class="product-info-head no-brdr">soap</h1>
+								<p class="product-info-subhead dim">this is a type of soap</p>
+								<div class="btn-div">
+									<a href="#" class="btn">Add to cart</a>
+								</div>
+								<p><strong>$31.95</strong></p>
+							</div>
+						</div>
+						<div class="column third">
+							<li>
+								<a href="http://www.flickr.com/photos/anirudhkoul/3536413126/">
+									<figure>
+										<img src="img/overlaytest.png" alt="Arc de Triomphe">
+										<figcaption><p class="product-info-head">Details</p></figcaption>
+									</figure>
+								</a>
+							</li>
+							
+							<div class="product-info">
+								<h1 class="product-info-head no-brdr">soap</h1>
+								<p class="product-info-subhead dim">this is a type of soap</p>
+								<div class="btn-div">
+									<a href="#" class="btn">Add to cart</a>
+								</div>
+								<p><strong>$31.95</strong></p>
+							</div>
+						</div>
+						<div class="column third">
+							<li>
+								<a href="http://www.flickr.com/photos/anirudhkoul/3536413126/">
+									<figure>
+										<img src="img/overlaytest.png" alt="Arc de Triomphe">
+										<figcaption><p class="product-info-head">Details</p></figcaption>
+									</figure>
+								</a>
+							</li>
+							
+							<div class="product-info">
+								<h1 class="product-info-head no-brdr">soap</h1>
+								<p class="product-info-subhead dim">this is a type of soap</p>
+								<div class="btn-div">
+									<a href="#" class="btn">Add to cart</a>
+								</div>
+								<p><strong>$31.95</strong></p>
+							</div>
+						</div>
+						<div class="column third">
+							<li>
+								<a href="http://www.flickr.com/photos/anirudhkoul/3536413126/">
+									<figure>
+										<img src="img/overlaytest.png" alt="Arc de Triomphe">
+										<figcaption><p class="product-info-head">Details</p></figcaption>
+									</figure>
+								</a>
+							</li>
+							
+							<div class="product-info">
+								<h1 class="product-info-head no-brdr">soap</h1>
+								<p class="product-info-subhead dim">this is a type of soap</p>
+								<div class="btn-div">
+									<a href="#" class="btn">Add to cart</a>
+								</div>
+								<p><strong>$31.95</strong></p>
+							</div>
+						</div>
+					</ul>
+				</div><!--row--> 
+				<a href="#intro-ss" class="top-circle"><img src="img/arrow-up.png" alt="" /></a>												
 			</section><!--products-->
+
+			<footer id="contact-ss">
+				<div class="row clearfix contain">
+					<div class="column third">
+						<h1 class="footer-head">Customer Service</h1>
+						<a class="dim" href="#">info@hipster.com</a>
+					</div>
+
+					<div class="column third">
+						<h1 class="footer-head">Wholesale Inquiries</h1>
+						<a class="dim" href="#">inquiries@hipster.com</a>
+					</div>
+
+					<div class="column third">
+						<h1 class="footer-head">Press</h1>
+						<a class="dim" href="#">press@hipster.com</a>
+					</div>
+				</div>
+
+				<div class="row clearfix no-padding">
+					<div class="column full">
+						<div class="fib-padding">
+							<a href="#" class="btn"><img class="pin" src="img/pin.png" alt="" />Google Map Us</a>
+						</div>
+						<ul class="social-icons">
+							<li><a href="#"><img src="img/icon-fb.png" alt=""></a></li>
+							<li><a href="#"><img src="img/icon-twitter.png" alt=""></a></li>
+							<li><a href="#"><img src="img/icon-pinterest.png" alt=""></a></li>
+						</ul>
+
+						<picture>
+							<source srcset="img/stache-logo-lrg.png" media="(min-width: 1000px)">
+							<source srcset="img/stache-logo-med.png" media="(min-width: 800px)">
+							<img class="footer-logo" srcset="img/stache-logo-small.png" alt="A douche with a mustache">
+						</picture>
+						
+
+						<div class="footer-header">
+							<h1 class="logo-head centered">Bone &amp; Porter</h1>
+							<h2 class="subhead">Be pretentious. We don't mind.</h2>
+						</div>
+
+					</div>
+				</div>
+			</footer>
 
 		</section><!--main-->
 	</div><!--container-->

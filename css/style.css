@@ -30,7 +30,6 @@ NORMALIZE.css
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-	}
 
 	/*outline: 1px solid red;*/
 	}
@@ -125,12 +124,6 @@ NORMALIZE.css
 		transition:.3s;
 	}
 
-	header figure {
-		text-align: center;
-		margin: 2em 0;
-
-	}
-
 	.header-inner {
 		position: relative;
 		top: 50%;
@@ -147,6 +140,11 @@ NORMALIZE.css
 		padding: 4em 0;
 	}
 
+	.hgroup {
+		padding: 3.2em 0;
+		margin: 0 auto;
+	}
+
 
 	/* Nav */
 
@@ -155,10 +153,10 @@ NORMALIZE.css
 	}
 
 	.main-nav {
-		height: 80px;
-		margin-bottom: -80px;
+		height: 70px;
+		margin-bottom: -70px;
 		background: #fff;
-		z-index: 150;
+		z-index: 99;
 		box-shadow: 0 2px 3px rgba(0,0,0,.4);
 		text-align: center;
 		-webkit-transform-style: preserve-3d;
@@ -175,7 +173,7 @@ NORMALIZE.css
 	.main-nav a {
 		text-transform: uppercase;
 		font-size: .7em;
-		margin: 0 1.8em;
+		margin: 0 3.2em;
 		display: inline-block;
 		color: #222;
 		font-weight: 600;
@@ -187,6 +185,10 @@ NORMALIZE.css
 		-ms-transform:translateY(-50%);
 		-o-transform:translateY(-50%);
 		transform:translateY(-50%);
+	}
+
+	.logo-home {
+		position: absolute !important;
 	}
 	
 
@@ -219,6 +221,109 @@ NORMALIZE.css
 		text-align: left;
 	}
 
+	.photo-grid {
+		text-align: center;
+		background: #e5e5e5;
+		padding: 4.8em 0;
+	}
+
+	.photo-grid .column {
+		margin: 3em 0;
+	}
+	
+	.photo-grid li {
+		display: inline-block;
+	}
+
+	.photo-grid img {
+		display: block;
+		height: auto;
+		max-width: 100%;
+	}
+
+	.photo-grid figure {
+		height: 350px;
+		width: 350px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.photo-grid figcaption {
+		background: rgba(229,229,229,.8);
+		color: #222;
+		display: table-cell;
+		height: 100%;
+		left: 0;
+		opacity: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 2;
+		-webkit-transition: all 300ms;
+		-moz-transition: all 300ms;
+		transition: all 300ms;
+
+		-webkit-transition-delay: 100ms;
+		-moz-transition-delay: 100ms;
+		transition-delay: 100ms;
+	}
+ 
+	.photo-grid figcaption .product-info-head {
+		position: relative;
+		top: 50%;
+ 		vertical-align: middle;
+		-webkit-transform:translateY(-50%);
+		-moz-transform:translateY(-50%);
+		-ms-transform:translateY(-50%);
+		-o-transform:translateY(-50%);
+		transform:translateY(-50%);
+	}
+
+	.photo-grid li:hover figcaption {
+		opacity: 1;
+	}
+
+	.product-info {
+		margin-top: -2.4em;
+		z-index: 3;
+		position: relative;
+	}
+
+
+	/* Footer */
+
+	footer {
+		background: #fff;
+	}
+
+	footer > div {
+		text-align: center;
+	}
+
+	.footer-header {
+		padding: 1.6em 0;
+	}
+
+	.footer-logo {
+		padding: 1.6em 0;
+	}
+	
+	.social-icons {
+		text-align: center;
+		padding: 1.6em 0;
+	}
+
+	.social-icons li {
+		display: inline-block;
+		margin: 0 .5em;
+	}
+
+	.social-icons li:hover {
+		opacity: .7;
+	}
+
+
+
 
 
 	/* Transitions */
@@ -242,9 +347,12 @@ NORMALIZE.css
  	/* Text Styles */
 
  	.section-head {
- 		font-size: 2.2em;
-  		font-weight: 300;
- 		padding: .8em 0;
+ 		font-size: 1.4em;
+		font-weight: 800;
+		padding: 1.6em 0;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 2px;
   	}
 
  	.logo-head {
@@ -281,7 +389,36 @@ NORMALIZE.css
 	}
 
 	.ingredients-list p {
-		font-weight: 200;
+		font-weight: 400;
+	}
+
+	.product-info-head {
+		font-size: 1.5em;
+		font-weight: 800;
+		letter-spacing: -1px;
+		text-transform: uppercase;
+		border: 4px solid black;
+		max-width: 50%;
+		margin: 0 auto;
+		padding: .2em;
+	}
+
+	.product-info-subhead {
+		font-family: 'Raleway', sans-serif;
+		font-weight: 700;
+		font-size: .7em;
+		text-transform: uppercase;
+	}
+
+	.footer-head {
+		font-family: 'Raleway', sans-serif;
+		font-weight: 300;
+	}
+
+	footer a {
+		font-family: 'Raleway', sans-serif;
+		font-weight: 400;
+		color: #2f2f2f;
 	}
 
 
@@ -289,7 +426,7 @@ NORMALIZE.css
  	/* Images */
 
 	.segue {
-		background: url('../img/pbr-drinker-small.png') 80% 10% no-repeat;
+		background: url('../img/pbr-drinker-small.png') 99% 15% no-repeat;
 		background-size: cover;
 		height: 500px;
 	}
@@ -318,21 +455,39 @@ NORMALIZE.css
  		margin: auto;
  	}
 
- 	.button-div {
- 		margin-top: 3em;
+ 	.arrowfixed {
+ 		position: fixed;
+ 		bottom: 10%;
+ 		right: 5%;
+ 		z-index: 100;
+ 		opacity: 0;
+ 		-webkit-transition: .3s ease-in all;
+ 	}
+
+ 	.top-circle {
+ 		width: 44px;
+ 		height: 44px;
+ 		position: absolute;
+ 		top: 89%;
+ 		left: 50%;
+ 		margin-top: -22px;
+ 		margin-left: -22px;
+ 	}
+
+ 	.btn-div {
+ 		padding: 1.6em 0;
  	}
 
  	.btn {
  		border: 3px solid #222;
  		border-radius: 3px;
-		width: 60%;
-		margin: 3em auto;
+		padding: .5em; 
 		color: #222;
  		font-weight: 800;
  		text-transform: uppercase;
  		font-size: 14px;
  		letter-spacing: .1em;
- 		padding: 1em 2em;
+ 		 
 		-webkit-transition:.1s ease all;
 		-moz-transition:.1s ease all;
 		-ms-transition:.1s ease all;
@@ -349,11 +504,43 @@ NORMALIZE.css
 		text-align: center;
 		font-size: 40px;
 		margin-top: -1em;
-	}
+	}	
 
 	.no-contain {
 		max-width: none;
 	}
+
+	.no-padding {
+		padding: 0;
+	}
+
+	.fib-padding {
+		padding: 1.6em 0;
+		position: relative;
+	}
+
+	.pin {
+		position: relative;
+		vertical-align: middle;
+		margin-right: .7em;
+	}
+
+	.no-brdr {
+		border: none;
+	}
+
+	.dim {
+		opacity: .7;
+	}
+
+	.remove-color {
+		color: #fff;
+	}
+
+ 	.show {
+ 		opacity: 1;
+ 		-webkit-transition: .3s ease-in all;
+ 	}
 
 
 
@@ -400,7 +587,7 @@ NORMALIZE.css
 	}
 
 	body {
- 		padding-top: 800px;
+ 	padding-top: 800px;
 	}
 	
 
@@ -419,32 +606,11 @@ NORMALIZE.css
 		top: 50%;
 	}
 
-	.hgroup {
-		max-width: 500px;
-		margin: 0 auto;
-	}
-
 
 	/* Nav */
 
 	.main-nav a {
-		font-size: 1.1em;
-	}
-
-	.scroll-circles {
-		position: absolute;
-	}
-
-	.scroll-circles a {
-		display: block;
-		font-size: 30px;
-		color: rgba(0,0,0,.6);
-	}
-
-	.scroll-circles-fixed {
-		position: fixed;
-		right: 4%;
-		top:50%;
+		font-size: .9em;
 	}
 
 
@@ -465,6 +631,7 @@ NORMALIZE.css
 	.ingredients-list {
 		font-family: 'Raleway', sans-serif;
 		text-align: left;
+		padding-top: .8em;
 	}
 
 	.ingredients-list li {
@@ -473,14 +640,25 @@ NORMALIZE.css
 
 	.products {
 		padding: 3.2em 0;
+		position: relative;
 	}
+
+	.products h1 {
+		padding: 0;
+	}
+
+	.photo-grid {
+		height: 1300px;
+	}
+
+
 
 
 
 	/* Misc */
 
 	.contain {
- 		max-width: 1500px;
+ 		max-width: 1200px;
  		margin: 0 auto;
  	}
 
@@ -488,27 +666,25 @@ NORMALIZE.css
  		display: none;
  	} 
 
- 	.btn {
- 		position: absolute;
- 		bottom: 6%;
- 		left: 17.5%;
- 		width: 10%;
- 	}
-
  	.centered {
  		text-align: center !important;
  	}
 
+ 	.top-circle {
+ 		top: 96%;
+ 	 
+	}
 
 
  	/* Text Styles */
 	
 	.number-size {
-		font-size: 5em;
+		font-size: 7em;
  	}
 
  	.section-head {
  		text-align: left;
+
  	}
 
  	.primary-graph {
@@ -521,7 +697,7 @@ NORMALIZE.css
 	.segue {
 		background-position: 50% 10%;
 		background-attachment: fixed;
-		height: 700px;
+		height: 520px;
 		background-size: cover;
 		background: url('../img/pbr-drinker.jpg') 80% 10% no-repeat;
 	}
@@ -536,8 +712,9 @@ NORMALIZE.css
 	/* Text Styles */
 
 	.section-head {
-		font-size: 4em; 
+		font-size: 3em; 
 		text-align: left;
+		padding: 0 0 .8em 0;
 	}
 
 	.subhead {
@@ -569,8 +746,7 @@ NORMALIZE.css
 ==============================================
 ANIMATE.CSS
 ==============================================
-*/
-@charset "UTF-8";/*!
+
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
 
